@@ -68,7 +68,7 @@ body {
     background: var(--accent-gradient);
     border: none;
     border-radius: 50px;
-    color: var(--text-dark);
+    color: #fff;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -192,12 +192,24 @@ body {
 .message-avatar {
     width: 36px;
     height: 36px;
+    min-width: 36px;
+    min-height: 36px;
     background: rgba(255, 215, 0, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--primary-color);
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.message {
+    display: flex;
+    gap: 10px;
+    max-width: 90%; /* Increased for better mobile visibility */
+    margin-bottom: 16px;
+    animation: messageSlide 0.3s ease-out;
+    align-items: flex-start; /* Aligns avatar with message top */
 }
 
 .message-content {
@@ -304,20 +316,6 @@ body {
 @media (max-width: 768px) {
     .message { max-width: 90%; }
 }
-
-/* Hide default headings */
-body > h1:first-of-type:not(.heading) {
-    display: none !important;
-}
-
-.markdown-body h1:first-child {
-    display: none !important;
-}
-
-.position-relative h1:first-child {
-    display: none !important;
-}
-
     </style>
 </head>
 <body>
