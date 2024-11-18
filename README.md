@@ -152,7 +152,7 @@ body {
 .chat-status {
     display: flex;
     align-items: center;
-    color: var(--primary-color);
+    color: #fff;
     font-weight: 600;
 }
 
