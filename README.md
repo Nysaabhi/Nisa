@@ -121,7 +121,7 @@ body {
 
 .filter-btn.active {
     background: var(--accent-gradient);
-    color: var(--text-dark);
+    color: #fffffff6;
     font-weight: 600;
 }
 
