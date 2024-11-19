@@ -199,7 +199,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary-color);
+    color: #ffffff;
     flex-shrink: 0; /* Prevents shrinking */
 }
 
